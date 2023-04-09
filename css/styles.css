@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+* {
+    box-sizing: border-box
+}
+
+/*for smooth scrolling*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*default font style*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*content section style*/
+
+section {
+    background-color: #f2f2f2;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section:nth-of-type(2n) {
+    background-color: #ccc;
+}
+
+.main-content {
+    margin-top: 50px;
+}
+
+/*navigation menu style*/
+
+#menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 99%;
+}
+
+#menu-list li {
+    float: left;
+}
+
+#menu-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu-list li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#menu-list .active {
+    background-color: #04AA6D;
+}
